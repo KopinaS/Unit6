@@ -14,7 +14,7 @@ if os.path.exists(args.path):
         os.remove(args.path)
         exit(0)
     else:
-        ag = input(f'\n{args.name}, хотите удалить этот файл? ').capitalize()
+        ag = input(f'\n{args.name}, хотите удалить этот файл? (Y/N) ').capitalize()
         if ag[0] == 'Y':
             os.remove(args.path)
         else:
